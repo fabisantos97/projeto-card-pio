@@ -1,0 +1,178 @@
+body { 
+    background-color:#000000;
+    color: #ffffff;
+    }
+    
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanho igual */
+        gap: 20px; /* Espaçamento entre as colunas */
+      }
+
+
+     /* Estilos específicos para a classe "valor" */
+      .valor {
+        font-size: 35px;
+        color: #ff0000; 
+        text-align: right;
+        vertical-align: middle;
+        font-family: 'Odibee Sans', cursive;
+      }
+      .topico {
+        font-size: 23px;
+        color: #ffffff; 
+        text-align: left;
+        font-family: 'Silkscreen', cursive;
+      }
+
+/* Estilos específicos para a classe p */
+    p{
+        font-size: 20px;
+        text-align: left;
+        font-family: 'Permanent Marker', cursive;
+    }
+/* Estilos específicos para a classe h2 */
+      h2 {
+        text-align: center;
+        font-family: 'Silkscreen', cursive;
+        color: #ee0000;
+        font-size: 70px;
+        
+      }
+
+      .neon-vermelho {
+        font-size: 70px;
+        color: rgb(255, 0, 0);
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+      }
+/* Estilos específicos para a classe h3 */
+      h3 {
+        text-align: center;
+        font-family:'Anton', sans-serif;
+        color: #ffee05;
+        font-family: 'Silkscreen', cursive;
+        font-size: 60px;
+
+      }
+/* Estilos específicos para imagem central */
+      .centro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+/* Estilos específicos para o h1 */
+h1{
+    font-size: 70px;
+    margin-bottom: -10px; 
+
+  }
+      .neon {
+        font-size: 70px;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: -10px;
+      }
+      
+      .game {
+        font-family: 'Silkscreen', cursive;
+        color: yellow;
+        text-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
+        margin-bottom: -10px;
+      }
+      
+      .bar {
+        font-family: 'Silkscreen', cursive;
+        color: cyan;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+        margin-top:-10px;
+      }
+
+
+ /* Bordas" */
+    @keyframes borderAnimation {
+        0% {
+          border-image-source: linear-gradient(to right, red, yellow, green);
+          border-image-slice: 1;
+        }
+        50% {
+          border-image-source: linear-gradient(to right, green, blue, purple);
+          border-image-slice: 1;
+        }
+        100% {
+          border-image-source: linear-gradient(to right, purple, pink, red);
+          border-image-slice: 1;
+        }
+      }
+      
+      .degrade-borda {
+        font-size: 24px;
+        padding: 10px;
+        display: flex;
+        animation: borderAnimation 5s infinite;
+        border: 2px solid transparent;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to right, red, yellow, green);
+        text-align: center;
+        justify-content: center;
+        align-items: center
+      }
+/* Estilos específicos para imagens da coluna 2 */
+.centro2 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .centro4 {
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    display: block;
+  }
+  .telefone {
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 25px;
+  }
+  .numero {
+    color: #ff0000;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 25px;
+  }
+
+  /*Estilo especifico do h4*/
+  .neon-degrade {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  h4 {
+    font-size: 24px;
+    background-image: linear-gradient(to right, #ff00cc, #00ffcc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 10px 0;
+    margin: 0;
+    font-family: 'Silkscreen', cursive;
+
+  }
+  
+  .imagem-esquerda,
+  .imagem-direita {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .imagem-esquerda {
+    left: -50px;
+  }
+  
+  .imagem-direita {
+    right: -50px;
+  }
